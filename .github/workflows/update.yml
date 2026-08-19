@@ -35,7 +35,8 @@ jobs:
       # 4. 株価取得Pythonスクリプトを実行
       - name: Run Stock Fetcher Script
         run: |
-          python serenity_tracker.py
+          python fetch_stocks.py
+        
 
       # 5. 更新された JSON を git コミット＆プッシュ
       - name: Commit and Push Updated Data
