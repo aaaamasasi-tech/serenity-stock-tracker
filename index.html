@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serenity Stock Tracker</title>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #334155;
+      --up-color: #4ade80;
+      --down-color: #f87171;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      padding: 16px;
+      line-height: 1.5;
+    }
+
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+    h1 {
+      font-size: 1.25rem;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    p.subtitle {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* 状態表示 */
+    #status {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    /* リスト表示（カード風） */
+    .tracker-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .stock-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 6px;
+    }
+
+    .symbol {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    .price-box {
+      text-align: right;
+    }
+
+    .price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      font-family: monospace;
+    }
+
+    .change {
+      font-size: 0.8rem;
+      font-weight: bold;
+      font-family: monospace;
+    }
+    .up { color: var(--up-color); }
+    .down { color: var(--down-color); }
+
+    .tier {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      background: #0f172a;
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .thesis {
+      font-size: 0.8rem;
+      color: #cbd5e1;
+    }
+
+    .mcap {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>⚡ Serenity Tracker</h1>
+    <p class="subtitle">AI / Semiconductor Supply Chain Bottleneck Monitor</p>
+  </header>
+
+  <div id="status">データを読み込み中...</div>
+
+  <div id="tracker" class="tracker-list"></div>
+
+  <script>
+    async function loadStockData() {
+      const statusEl = document.getElementById('status');
+      const trackerEl = document.getElementById('tracker');
+
+      try {
+        // キャッシュを回避して最新のJSONを取得
+        const response = await fetch('./serenity_data.json?t=' + new Date().getTime());
+        if (!response.ok) throw new Error('JSONの読み込みに失敗しました');
+
+        const data = await response.json();
+        
+        statusEl.textContent = `最終更新: ${new Date().toLocaleString('ja-JP')} (${data.length}銘柄)`;
+        trackerEl.innerHTML = '';
+
+        data.forEach(item => {
+          const isUp = item.change_pct && item.change_pct.startsWith('+');
+          const changeClass = isUp ? 'up' : 'down';
+
+          const card = document.createElement('div');
+          card.className = 'stock-card';
+          card.innerHTML = `
+            <div class="card-header">
+              <div>
+                <div class="symbol">${item.symbol}</div>
+              </div>
+              <div class="price-box">
+                <div class="price">$${item.price}</div>
+                <div class="change ${changeClass}">${item.change_pct}</div>
+              </div>
+            </div>
+            <div class="tier">${item.tier}</div>
+            <div class="thesis">${item.thesis}</div>
+            <div class="mcap">時価総額: ${item.market_cap}</div>
+          `;
+          trackerEl.appendChild(card);
+        });
+
+      } catch (err) {
+        statusEl.textContent = 'データの読み込みに失敗しました。自動更新が完了するまでお待ちください。';
+        console.error(err);
+      }
+    }
+
+    // 初回読み込み
+    loadStockData();
+  </script>
+</body>
+</html>
