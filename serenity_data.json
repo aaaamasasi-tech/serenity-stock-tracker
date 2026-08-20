@@ -12,10 +12,10 @@
     "symbol": "4063.T",
     "tier": "2. pBN Crucibles & Equipment",
     "thesis": "Single-supplier crucible constraint",
-    "price": 6090.0,
-    "prev_close": 6255.0,
-    "change_pct": "-2.64%",
-    "market_cap": "$11264.65B"
+    "price": 6108.0,
+    "prev_close": 6083.0,
+    "change_pct": "+0.41%",
+    "market_cap": "$11297.95B"
   },
   {
     "symbol": "SIVEF",
@@ -31,8 +31,8 @@
     "tier": "5. Optical Modules Assembly",
     "thesis": "Hyperscaler capex direct beneficiary",
     "price": 122.19,
-    "prev_close": 128.05,
-    "change_pct": "-4.58%",
+    "prev_close": 128.79,
+    "change_pct": "-5.12%",
     "market_cap": "$10.33B"
   },
   {
