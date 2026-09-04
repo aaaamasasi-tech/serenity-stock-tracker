@@ -3,10 +3,10 @@
     "symbol": "AXTI",
     "tier": "1. Raw Materials / InP Substrates",
     "thesis": "Indium Phosphide supply bottleneck",
-    "price": 61.74,
+    "price": 60.88,
     "prev_close": 56.76,
-    "change_pct": "+8.77%",
-    "market_cap": "$4.05B"
+    "change_pct": "+7.26%",
+    "market_cap": "$3.99B"
   },
   {
     "symbol": "4063.T",
@@ -21,27 +21,27 @@
     "symbol": "SIVEF",
     "tier": "4. CW Lasers (CPO Light Source)",
     "thesis": "CPO transition bottleneck (2027-2028)",
-    "price": 2.86,
+    "price": 2.88,
     "prev_close": 2.85,
-    "change_pct": "+0.35%",
-    "market_cap": "$844.9M"
+    "change_pct": "+1.05%",
+    "market_cap": "$850.8M"
   },
   {
     "symbol": "AAOI",
     "tier": "5. Optical Modules Assembly",
     "thesis": "Hyperscaler capex direct beneficiary",
-    "price": 105.27,
+    "price": 104.13,
     "prev_close": 100.46,
-    "change_pct": "+4.79%",
-    "market_cap": "$8.94B"
+    "change_pct": "+3.66%",
+    "market_cap": "$8.84B"
   },
   {
     "symbol": "AEHR",
     "tier": "6. Testing & Validation",
     "thesis": "Optical component validation bottleneck",
-    "price": 85.18,
+    "price": 84.5,
     "prev_close": 76.66,
-    "change_pct": "+11.11%",
-    "market_cap": "$2.78B"
+    "change_pct": "+10.23%",
+    "market_cap": "$2.76B"
   }
 ]
