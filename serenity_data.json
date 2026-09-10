@@ -4,8 +4,8 @@
     "tier": "1. Raw Materials / InP Substrates",
     "thesis": "Indium Phosphide supply bottleneck",
     "price": 68.91,
-    "prev_close": 68.34,
-    "change_pct": "+0.83%",
+    "prev_close": 69.2,
+    "change_pct": "-0.42%",
     "market_cap": "$4.52B"
   },
   {
@@ -31,8 +31,8 @@
     "tier": "5. Optical Modules Assembly",
     "thesis": "Hyperscaler capex direct beneficiary",
     "price": 107.93,
-    "prev_close": 111.36,
-    "change_pct": "-3.08%",
+    "prev_close": 107.16,
+    "change_pct": "+0.72%",
     "market_cap": "$9.16B"
   },
   {
@@ -40,8 +40,8 @@
     "tier": "6. Testing & Validation",
     "thesis": "Optical component validation bottleneck",
     "price": 95.56,
-    "prev_close": 90.58,
-    "change_pct": "+5.50%",
+    "prev_close": 94.41,
+    "change_pct": "+1.22%",
     "market_cap": "$3.12B"
   }
 ]
