@@ -21,27 +21,27 @@
     "symbol": "SIVEF",
     "tier": "4. CW Lasers (CPO Light Source)",
     "thesis": "CPO transition bottleneck (2027-2028)",
-    "price": 2.8,
+    "price": 2.86,
     "prev_close": 3.05,
-    "change_pct": "-8.20%",
-    "market_cap": "$827.2M"
+    "change_pct": "-6.23%",
+    "market_cap": "$844.9M"
   },
   {
     "symbol": "AAOI",
     "tier": "5. Optical Modules Assembly",
     "thesis": "Hyperscaler capex direct beneficiary",
-    "price": 96.85,
+    "price": 98.12,
     "prev_close": 105.32,
-    "change_pct": "-8.04%",
-    "market_cap": "$8.22B"
+    "change_pct": "-6.84%",
+    "market_cap": "$8.33B"
   },
   {
     "symbol": "AEHR",
     "tier": "6. Testing & Validation",
     "thesis": "Optical component validation bottleneck",
-    "price": 84.48,
+    "price": 85.22,
     "prev_close": 95.0,
-    "change_pct": "-11.07%",
-    "market_cap": "$2.76B"
+    "change_pct": "-10.29%",
+    "market_cap": "$2.78B"
   }
 ]
