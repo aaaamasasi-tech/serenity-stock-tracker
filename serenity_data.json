@@ -12,10 +12,10 @@
     "symbol": "4063.T",
     "tier": "2. pBN Crucibles & Equipment",
     "thesis": "Single-supplier crucible constraint",
-    "price": 6040.0,
+    "price": 5978.0,
     "prev_close": 5992.0,
-    "change_pct": "+0.80%",
-    "market_cap": "$10967.03B"
+    "change_pct": "-0.23%",
+    "market_cap": "$10854.45B"
   },
   {
     "symbol": "SIVEF",
@@ -31,8 +31,8 @@
     "tier": "5. Optical Modules Assembly",
     "thesis": "Hyperscaler capex direct beneficiary",
     "price": 83.73,
-    "prev_close": 84.45,
-    "change_pct": "-0.85%",
+    "prev_close": 84.4,
+    "change_pct": "-0.79%",
     "market_cap": "$7.11B"
   },
   {
@@ -40,8 +40,8 @@
     "tier": "6. Testing & Validation",
     "thesis": "Optical component validation bottleneck",
     "price": 69.21,
-    "prev_close": 68.5,
-    "change_pct": "+1.04%",
+    "prev_close": 68.51,
+    "change_pct": "+1.02%",
     "market_cap": "$2.26B"
   }
 ]
