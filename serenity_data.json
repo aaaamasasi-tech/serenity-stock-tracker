@@ -12,10 +12,10 @@
     "symbol": "4063.T",
     "tier": "2. pBN Crucibles & Equipment",
     "thesis": "Single-supplier crucible constraint",
-    "price": 5804.0,
-    "prev_close": 5897.0,
-    "change_pct": "-1.58%",
-    "market_cap": "$10538.51B"
+    "price": 5776.0,
+    "prev_close": 5821.0,
+    "change_pct": "-0.77%",
+    "market_cap": "$10487.67B"
   },
   {
     "symbol": "SIVEF",
@@ -40,8 +40,8 @@
     "tier": "6. Testing & Validation",
     "thesis": "Optical component validation bottleneck",
     "price": 55.65,
-    "prev_close": 61.71,
-    "change_pct": "-9.82%",
+    "prev_close": 61.69,
+    "change_pct": "-9.79%",
     "market_cap": "$1.82B"
   }
 ]
