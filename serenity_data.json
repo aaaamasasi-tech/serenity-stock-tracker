@@ -12,19 +12,19 @@
     "symbol": "4063.T",
     "tier": "2. pBN Crucibles & Equipment",
     "thesis": "Single-supplier crucible constraint",
-    "price": 5826.0,
-    "prev_close": 5821.0,
-    "change_pct": "+0.09%",
-    "market_cap": "$10578.46B"
+    "price": 5784.0,
+    "prev_close": 5826.0,
+    "change_pct": "-0.72%",
+    "market_cap": "$10502.20B"
   },
   {
     "symbol": "SIVEF",
     "tier": "4. CW Lasers (CPO Light Source)",
     "thesis": "CPO transition bottleneck (2027-2028)",
-    "price": 2.07,
+    "price": 2.02,
     "prev_close": 2.08,
-    "change_pct": "-0.48%",
-    "market_cap": "$660.0M"
+    "change_pct": "-2.88%",
+    "market_cap": "$644.1M"
   },
   {
     "symbol": "AAOI",
