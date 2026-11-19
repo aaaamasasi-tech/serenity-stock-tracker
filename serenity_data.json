@@ -4,35 +4,35 @@
     "tier": "1. Raw Materials / InP Substrates",
     "thesis": "Indium Phosphide supply bottleneck",
     "price": 35.61,
-    "prev_close": 38.48,
-    "change_pct": "-7.46%",
+    "prev_close": 36.47,
+    "change_pct": "-2.36%",
     "market_cap": "$2.34B"
   },
   {
     "symbol": "4063.T",
     "tier": "2. pBN Crucibles & Equipment",
     "thesis": "Single-supplier crucible constraint",
-    "price": 5546.0,
+    "price": 5529.0,
     "prev_close": 5571.0,
-    "change_pct": "-0.45%",
-    "market_cap": "$10070.16B"
+    "change_pct": "-0.75%",
+    "market_cap": "$10039.30B"
   },
   {
     "symbol": "SIVEF",
     "tier": "4. CW Lasers (CPO Light Source)",
     "thesis": "CPO transition bottleneck (2027-2028)",
-    "price": 1.33,
+    "price": 1.32,
     "prev_close": 1.33,
-    "change_pct": "-0.00%",
-    "market_cap": "$405.0M"
+    "change_pct": "-0.75%",
+    "market_cap": "$402.0M"
   },
   {
     "symbol": "AAOI",
     "tier": "5. Optical Modules Assembly",
     "thesis": "Hyperscaler capex direct beneficiary",
     "price": 40.79,
-    "prev_close": 41.38,
-    "change_pct": "-1.43%",
+    "prev_close": 41.55,
+    "change_pct": "-1.83%",
     "market_cap": "$3.70B"
   },
   {
@@ -40,8 +40,8 @@
     "tier": "6. Testing & Validation",
     "thesis": "Optical component validation bottleneck",
     "price": 49.48,
-    "prev_close": 54.09,
-    "change_pct": "-8.52%",
+    "prev_close": 50.92,
+    "change_pct": "-2.83%",
     "market_cap": "$1.62B"
   }
 ]
